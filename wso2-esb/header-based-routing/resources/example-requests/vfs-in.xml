@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+   		<ns1:ClientId xmlns:ns1="http://custom.header.samples">App1</ns1:ClientId>
+   </soapenv:Header>
+   <soapenv:Body>
+   	<m0:CheckPriceRequest xmlns:m0="http://services.samples">
+   		<m0:Code>ACT</m0:Code>
+   	</m0:CheckPriceRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
