@@ -1,0 +1,20 @@
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="JMSBasedListener" transports="jms" startOnLoad="true" trace="disable">
+   <description/>
+   <target>
+      <inSequence>
+         <property name="OUT_ONLY" value="true"/>
+         <property name="ClientIdName" expression="get-property('transport', 'ClientId')"/>
+         <log>
+            <property name="JMSBasedListener" value="Processing by JMSBasedListener"/>
+         </log>
+         <sequence key="EndpointSelectionSeq"/>
+      </inSequence>
+   </target>
+   <parameter name="transport.jms.ContentType">
+      <rules>
+         <jmsProperty>contentType</jmsProperty>
+         <default>text/xml</default>
+      </rules>
+   </parameter>
+   <parameter name="transport.jms.Destination">JMSIn</parameter>
+</proxy>

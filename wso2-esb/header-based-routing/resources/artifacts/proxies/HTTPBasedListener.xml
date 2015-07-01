@@ -1,0 +1,14 @@
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="HTTPBasedListener" transports="https http" startOnLoad="true" trace="disable">
+   <description/>
+   <target>
+      <inSequence>
+         <property name="FORCE_SC_ACCEPTED" value="true" scope="axis2" type="STRING"/>
+         <property name="OUT_ONLY" value="true" scope="default" type="STRING"/>
+         <property xmlns:ns="http://org.apache.synapse/xsd" name="ClientIdName" expression="$trp:ClientId" scope="default" type="STRING"/>
+         <log>
+            <property name="HttpBasedListener" value="Processing by HttpBasedListener"/>
+         </log>
+         <sequence key="EndpointSelectionSeq"/>
+      </inSequence>
+   </target>
+</proxy>

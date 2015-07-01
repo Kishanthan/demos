@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="CommonProxy" groupId="com.example.ESBDemoProject.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/CommonProxy.xml</file>
+    </artifact>
+    <artifact name="FileBasedListerner" groupId="com.example.ESBDemoProject.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/FileBasedListerner.xml</file>
+    </artifact>
+    <artifact name="HTTPBasedListener" groupId="com.example.ESBDemoProject.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/HTTPBasedListener.xml</file>
+    </artifact>
+    <artifact name="JMSBasedListener" groupId="com.example.ESBDemoProject.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/JMSBasedListener.xml</file>
+    </artifact>
+    <artifact name="CommonSeq" groupId="com.example.ESBDemoProject.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/CommonSeq.xml</file>
+    </artifact>
+    <artifact name="EndpointSelectionSeq" groupId="com.example.ESBDemoProject.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/EndpointSelectionSeq.xml</file>
+    </artifact>
+        </artifacts>

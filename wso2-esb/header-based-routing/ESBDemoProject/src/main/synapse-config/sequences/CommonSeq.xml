@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence xmlns="http://ws.apache.org/ns/synapse" name="CommonSeq">
+   <property xmlns:ns="http://org.apache.synapse/xsd"
+             name="xsltName"
+             expression="fn:concat('conf:/repository/demo/xslts/',get-property('EndPointId'),'.xslt')"
+             scope="default"
+             type="STRING"/>
+   <log>
+      <property xmlns:ns="http://org.apache.synapse/xsd"
+                name="xsltName"
+                expression="fn:concat('conf:/repository/demo/xslts/',get-property('EndPointId'),'.xslt')"/>
+   </log>
+   <property xmlns:ns="http://org.apache.synapse/xsd"
+             name="endPointName"
+             expression="fn:concat('conf:/repository/demo/endpoints/',get-property('EndPointId'),'.xml')"
+             scope="default"
+             type="STRING"/>
+   <filter xmlns:ns="http://org.apache.synapse/xsd"
+           source="boolean(get-property('EndPointId'))"
+           regex="true">
+      <then>
+         <xslt key="{get-property('xsltName')}"/>
+         <log>
+            <property name="EndPointName" expression="get-property('endPointName')"/>
+         </log>
+         <send>
+            <endpoint key-expression="get-property('endPointName')"/>
+         </send>
+      </then>
+      <else>
+         <log>
+            <property name="xsltNameProperty" value="XSLT is NULL"/>
+         </log>
+      </else>
+   </filter>
+</sequence>

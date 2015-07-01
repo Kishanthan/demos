@@ -1,0 +1,20 @@
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="CommonProxy" transports="jms" startOnLoad="true" trace="disable">
+   <description/>
+   <target>
+      <inSequence>
+         <property name="OUT_ONLY" value="true"/>
+         <property name="EndPointId" expression="get-property('transport', 'EndPointId')"/>
+         <log>
+            <property name="CommonProxy" value="Processing by CommonListener"/>
+         </log>
+         <sequence key="CommonSeq"/>
+      </inSequence>
+   </target>
+   <parameter name="transport.jms.ContentType">
+      <rules>
+         <jmsProperty>contentType</jmsProperty>
+         <default>text/xml</default>
+      </rules>
+   </parameter>
+   <parameter name="transport.jms.Destination">EndPointList</parameter>
+</proxy>

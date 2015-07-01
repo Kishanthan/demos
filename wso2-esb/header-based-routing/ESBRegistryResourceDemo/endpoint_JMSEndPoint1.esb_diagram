@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/developerstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_1z6jUB_gEeWDO93ogqN8rw" type="Esb" name="endpoint_JMSEndPoint1.esb_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_111O4B_gEeWDO93ogqN8rw" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_111O5R_gEeWDO93ogqN8rw" type="7001"/>
+    <children xmi:type="notation:Shape" xmi:id="_13GaMB_gEeWDO93ogqN8rw" type="3642" fontName=".Helvetica Neue DeskInterface">
+      <children xmi:type="notation:BasicCompartment" xmi:id="_13HBQB_gEeWDO93ogqN8rw" type="7041">
+        <children xmi:type="notation:Node" xmi:id="_13OWAB_gEeWDO93ogqN8rw" type="3646">
+          <children xmi:type="notation:DecorationNode" xmi:id="_13OWBR_gEeWDO93ogqN8rw" type="5161"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_13OWAR_gEeWDO93ogqN8rw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_13OWAh_gEeWDO93ogqN8rw" fontName=".Helvetica Neue DeskInterface"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_13OWAx_gEeWDO93ogqN8rw"/>
+          <element xmi:type="esb:AddressEndPoint" href="endpoint_JMSEndPoint1.esb#//@server/@children.0/@child"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_13OWBB_gEeWDO93ogqN8rw" width="75" height="75"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_13HBQR_gEeWDO93ogqN8rw" showTitle="true"/>
+      </children>
+      <element xmi:type="esb:EndpointDiagram" href="endpoint_JMSEndPoint1.esb#//@server/@children.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_13GaMR_gEeWDO93ogqN8rw" width="86" height="97"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_111O4R_gEeWDO93ogqN8rw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_111O4h_gEeWDO93ogqN8rw" fontName=".Helvetica Neue DeskInterface"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_111O4x_gEeWDO93ogqN8rw"/>
+    <element xmi:type="esb:EsbServer" href="endpoint_JMSEndPoint1.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_111O5B_gEeWDO93ogqN8rw"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_1z6jUR_gEeWDO93ogqN8rw"/>
+  <element xmi:type="esb:EsbDiagram" href="endpoint_JMSEndPoint1.esb#/"/>
+</notation:Diagram>
