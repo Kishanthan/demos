@@ -23,7 +23,7 @@ public class QueueSender {
                 "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n" +
                 "       <soapenv:Body>" +
                 "           <m0:CheckPriceRequest xmlns:m0=\"http://services.samples\">" +
-                "               <m0:Code>ACT</m0:Code>" +
+                "               <m0:Code>WSO2</m0:Code>" +
                 "           </m0:CheckPriceRequest>" +
                 "       </soapenv:Body>\n" +
                 "</soapenv:Envelope>");
